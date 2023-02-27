@@ -12,7 +12,7 @@ public class PetShelterContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=localhost;Database=PetShelter;Trusted_Connection=True;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer(@"Server=172.17.0.2,1433;Database=PetShelter;User=sa;Password=password123;TrustServerCertificate=True");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
