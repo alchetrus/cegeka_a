@@ -15,6 +15,4 @@ public class Person : IEntity
     public ICollection<Pet> RescuedPets { get; set; }
     public ICollection<Pet> AdoptedPets { get; set; }
     public ICollection<Donation> Donations { get; set; }
-
-    public ICollection<FundraiserDonation> FundraiserDonations { get; set; }
 }
