@@ -11,7 +11,7 @@ public class FundraiserConfiguration: IEntityTypeConfiguration<Fundraiser>
         builder.HasKey(p => p.Id);
 
         builder.Property(p => p.Title).IsRequired();
-        builder.Property(p => p.Description).IsRequired();
-        builder.Property(p => p.DonationTarget).IsRequired();
+        builder.Property(p => p.Description).IsRequired().HasMaxLength(600);
+        builder.Property(p => p.DonationTarget).IsRequired().HasPrecision(10, 2);
     }
 }
