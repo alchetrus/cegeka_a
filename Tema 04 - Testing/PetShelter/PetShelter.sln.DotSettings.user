@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=206690f3_002D6b7d_002D4181_002Da61a_002D90dce24547ae/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="RescuePetTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::03624F02-F276-49B2-B078-C95B69075A13::net7.0::PetShelter.BusinessLayer.Tests.RescuePetTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::03624F02-F276-49B2-B078-C95B69075A13::net7.0::PetShelter.BusinessLayer.Tests.AddDonationTests.GivenRequestWithInvalidAmount_WhenAddDonation_DonationIsNotAdded&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::03624F02-F276-49B2-B078-C95B69075A13::net7.0::PetShelter.BusinessLayer.Tests.AddDonationTests.GivenRequestWithInvalidName_WhenAddDonation_DonationIsNotAdded&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::03624F02-F276-49B2-B078-C95B69075A13::net7.0::PetShelter.BusinessLayer.Tests.AddDonationTests.GivenRequestWithInvalidCNP_WhenAddDonation_DonationIsNotAdded&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::03624F02-F276-49B2-B078-C95B69075A13::net7.0::PetShelter.BusinessLayer.Tests.AddDonationTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

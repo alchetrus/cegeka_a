@@ -1,0 +1,2 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=c2286fa9_002D725d_002D47c4_002Db13f_002Dfc05a9e173c3_0023PetShelter_002EDataAccessLayer/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
