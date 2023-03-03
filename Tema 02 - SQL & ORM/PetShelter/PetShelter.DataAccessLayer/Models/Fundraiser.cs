@@ -10,5 +10,5 @@ public class Fundraiser : IEntity
 
     public decimal DonationTarget { get; set; }
 
-    public ICollection<FundraiserDonation> FundraiserDonations { get; set; }
+    public ICollection<Donation> Donations { get; set; }
 }

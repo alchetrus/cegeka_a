@@ -18,10 +18,5 @@ public class DonationConfiguration : IEntityTypeConfiguration<Donation>
         //Relationships
         builder.HasOne(p => p.Donor).WithMany(p => p.Donations).HasForeignKey(p => p.DonorId)
             .IsRequired();
-        
-        builder.HasOne(p => p.Fundraiser)
-            .WithMany(p => p.Donations)
-            .HasForeignKey(p => p.FundraiserId)
-            .IsRequired();
     }
 }

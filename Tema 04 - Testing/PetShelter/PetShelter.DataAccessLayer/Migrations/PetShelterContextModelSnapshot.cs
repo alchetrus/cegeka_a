@@ -36,40 +36,11 @@ namespace PetShelter.DataAccessLayer.Migrations
                     b.Property<int>("DonorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("FundraiserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DonorId");
 
-                    b.HasIndex("FundraiserId");
-
                     b.ToTable("Donations");
-                });
-
-            modelBuilder.Entity("PetShelter.DataAccessLayer.Models.Fundraiser", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("DonationTarget")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Fundraisers");
                 });
 
             modelBuilder.Entity("PetShelter.DataAccessLayer.Models.Person", b =>
@@ -165,15 +136,7 @@ namespace PetShelter.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PetShelter.DataAccessLayer.Models.Fundraiser", "Fundraiser")
-                        .WithMany("Donations")
-                        .HasForeignKey("FundraiserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Donor");
-
-                    b.Navigation("Fundraiser");
                 });
 
             modelBuilder.Entity("PetShelter.DataAccessLayer.Models.Pet", b =>
@@ -189,11 +152,6 @@ namespace PetShelter.DataAccessLayer.Migrations
                     b.Navigation("Adopter");
 
                     b.Navigation("Rescuer");
-                });
-
-            modelBuilder.Entity("PetShelter.DataAccessLayer.Models.Fundraiser", b =>
-                {
-                    b.Navigation("Donations");
                 });
 
             modelBuilder.Entity("PetShelter.DataAccessLayer.Models.Person", b =>
